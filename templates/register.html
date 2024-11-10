@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Form</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+  </head>
+  <body
+    class="d-flex justify-content-center align-items-center"
+    style="height: 100vh"
+  >
+    <div class="container" style="max-width: 600px">
+      <h1 class="text-center">Register</h1>
+      <form>
+        {% comment %} name{% endcomment %}
+        <div class="row mb-3">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="first name"
+              aria-label="first name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+            />
+          </div>
+        </div>
+
+        {% comment %} Email{% endcomment %}
+        <div class="row mb-3">
+          <div class="col">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="email"
+              aria-label="email"
+            />
+          </div>
+        </div>
+
+        {% comment %} pasword{% endcomment %}
+        <div class="row mb-3">
+          <div class="col">
+            <input
+              type="pasword"
+              class="form-control"
+              placeholder="pasword"
+              aria-label="pasword"
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%">
+          Register
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
